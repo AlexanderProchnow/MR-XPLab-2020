@@ -26,7 +26,7 @@ const intro = magpieViews.view_generator("intro", {
   text: `Thank you for participating in this experiment.
             <br />
             <br />
-            It will take you roughly 6 minutes to complete.
+            It will take you roughly 4 minutes to complete.
             <br />
             <br />
             Please read through the instructions on the next page carefully.`,
