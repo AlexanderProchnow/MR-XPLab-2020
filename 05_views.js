@@ -23,7 +23,7 @@ const intro = magpieViews.view_generator("intro", {
   trials: 1,
   name: 'intro',
   // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
-  text: `Thank you for participating in this experiment.
+  text: `Thank you for participating in this experiment!
             <br />
             <br />
             It will take you roughly 4 minutes to complete.
@@ -118,11 +118,7 @@ const key_press_practice = magpieViews.view_generator("key_press", {
   // name should be identical to the variable name
   name: 'key_press_practice',
   data: _.shuffle(practice_trials.key_press),
-  pause: 250,
-  // you can add custom functions at different stages through a view's life cycle
-  hook: {
-     after_response_enabled: check_response
-  }
+  pause: 250
 });
 
 
@@ -134,10 +130,6 @@ const key_press_main = magpieViews.view_generator("key_press", {
   name: 'key_press_main',
   data: _.shuffle(main_trials.key_press),
   pause: 250,
-  // you can add custom functions at different stages through a view's life cycle
-  hook: {
-      after_stim_shown: time_limit
-  }
 });
 
 // There are many more templates available:
